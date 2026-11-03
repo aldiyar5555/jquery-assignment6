@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Part 3. DOM manipulation | Assignment 6 – jQuery</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&family=IBM+Plex+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <nav class="navbar">
+    <a class="brand" href="index.html">Assignment 6 · jQuery</a>
+    <ul>
+      <li><a class="link" href="index.html">Part 1. Basics</a></li>
+      <li><a class="link" href="effects.html">Part 2. Effects</a></li>
+      <li><a class="link" href="dom.html">Part 3. DOM</a></li>
+      <li><a class="link" href="animations.html">Part 4. Animations</a></li>
+      <li><a class="link" href="project.html">Part 5. Project</a></li>
+    </ul>
+  </nav>
+
+  <header class="page-head">
+    <h1>Part 3. DOM manipulation</h1>
+    <p>Adding and removing elements, attributes and forms.</p>
+    <p class="student">Student: <strong>Your Full Name</strong> &nbsp;|&nbsp; Group: <strong>Your Group</strong></p>
+  </header>
+
+  <main>
+    <section class="task" id="task5">
+      <h2>Task 5. Add &amp; remove elements</h2>
+      <p class="hint"><code>.append()</code>, <code>.prepend()</code>, <code>.remove()</code></p>
+      <ul id="itemList">
+        <li>Item 1</li>
+        <li>Item 2</li>
+      </ul>
+      <div class="row">
+        <button id="btnAppend">Add item (end)</button>
+        <button id="btnPrepend">Add item (start)</button>
+        <button id="btnRemove" class="ghost">Remove item</button>
+      </div>
+    </section>
+
+    <section class="task" id="task6">
+      <h2>Task 6. Modifying attributes</h2>
+      <p class="hint"><code>.attr()</code> changes <code>src</code> and <code>href</code>.</p>
+      <img id="swapImg" class="demo" src="https://picsum.photos/seed/forest/480/240" alt="Picture 1">
+      <div class="row">
+        <button id="btnSrc">Change image</button>
+      </div>
+      <p>Link: <a id="dynLink" href="https://api.jquery.com" target="_blank">api.jquery.com</a></p>
+      <div class="row">
+        <button id="btnHref">Change link</button>
+      </div>
+    </section>
+
+    <section class="task" id="task7">
+      <h2>Task 7. Form interaction</h2>
+      <p class="hint">Live preview with <code>.val()</code> and <code>.text()</code>.</p>
+      <form id="userForm" onsubmit="return false;">
+        <label for="nameInput">Name</label>
+        <input type="text" id="nameInput" placeholder="Type your name">
+        <label for="emailInput">Email</label>
+        <input type="email" id="emailInput" placeholder="name@example.com">
+      </form>
+      <div class="preview">
+        <p>Name: <strong id="nameOut">—</strong></p>
+        <p>Email: <strong id="emailOut">—</strong></p>
+      </div>
+    </section>
+  </main>
+
+  <footer>Assignment #6 · Web Technologies Front-End Development</footer>
+
+  <!-- Task 0: jQuery from a CDN -->
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="js/common.js"></script>
+  <script src="js/part3.js"></script>
+</body>
+</html>

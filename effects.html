@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Part 2. jQuery effects | Assignment 6 – jQuery</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&family=IBM+Plex+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <nav class="navbar">
+    <a class="brand" href="index.html">Assignment 6 · jQuery</a>
+    <ul>
+      <li><a class="link" href="index.html">Part 1. Basics</a></li>
+      <li><a class="link" href="effects.html">Part 2. Effects</a></li>
+      <li><a class="link" href="dom.html">Part 3. DOM</a></li>
+      <li><a class="link" href="animations.html">Part 4. Animations</a></li>
+      <li><a class="link" href="project.html">Part 5. Project</a></li>
+    </ul>
+  </nav>
+
+  <header class="page-head">
+    <h1>Part 2. jQuery effects</h1>
+    <p>Visibility, fade and slide methods.</p>
+    <p class="student">Student: <strong>Your Full Name</strong> &nbsp;|&nbsp; Group: <strong>Your Group</strong></p>
+  </header>
+
+  <main>
+    <section class="task" id="task2">
+      <h2>Task 2. Visibility methods</h2>
+      <p class="hint"><code>.hide()</code>, <code>.show()</code>, <code>.toggle()</code></p>
+      <p id="hideMe" class="box-demo">This paragraph can be hidden and shown again.</p>
+      <div class="row">
+        <button id="btnHide">Hide</button>
+        <button id="btnShow">Show</button>
+        <button id="btnToggle" class="ghost">Toggle</button>
+      </div>
+    </section>
+
+    <section class="task" id="task3">
+      <h2>Task 3. Fade methods</h2>
+      <p class="hint"><code>.fadeIn()</code>, <code>.fadeOut()</code>, <code>.fadeToggle()</code></p>
+      <img id="fadeImg" class="demo" src="https://picsum.photos/seed/mountains/640/300" alt="Mountain landscape">
+      <div class="row">
+        <button id="btnFadeOut">Fade out</button>
+        <button id="btnFadeIn">Fade in</button>
+        <button id="btnFadeToggle" class="ghost">Fade toggle</button>
+      </div>
+    </section>
+
+    <section class="task" id="task4">
+      <h2>Task 4. Slide methods</h2>
+      <p class="hint"><code>.slideUp()</code>, <code>.slideDown()</code>, <code>.slideToggle()</code></p>
+      <div class="panel-head">Collapsible panel</div>
+      <div class="panel-body" id="panel">
+        <p>jQuery slide effects animate the height of an element. <code>slideUp</code> hides it, <code>slideDown</code> shows it, and <code>slideToggle</code> switches between the two.</p>
+      </div>
+      <div class="row">
+        <button id="btnSlideUp">Slide up</button>
+        <button id="btnSlideDown">Slide down</button>
+        <button id="btnSlideToggle" class="ghost">Slide toggle</button>
+      </div>
+    </section>
+  </main>
+
+  <footer>Assignment #6 · Web Technologies Front-End Development</footer>
+
+  <!-- Task 0: jQuery from a CDN -->
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="js/common.js"></script>
+  <script src="js/part2.js"></script>
+</body>
+</html>

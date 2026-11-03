@@ -1,0 +1,145 @@
+:root {
+  --bg: #eef2f6;
+  --paper: #ffffff;
+  --ink: #18273a;
+  --muted: #5b6b7f;
+  --jq: #0769ad;      /* jQuery blue */
+  --sun: #f2b705;
+  --line: #d3dce6;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: "IBM Plex Sans", system-ui, sans-serif;
+  background: var(--bg);
+  color: var(--ink);
+  line-height: 1.55;
+}
+
+code { font-family: "IBM Plex Mono", ui-monospace, monospace; font-size: .92em; }
+
+/* ---------- Navbar ---------- */
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background: var(--jq);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: .5rem 1.5rem;
+  padding: .75rem 1.5rem;
+}
+.navbar .brand { color: #fff; font-weight: 700; margin-right: auto; text-decoration: none; }
+.navbar ul { list-style: none; display: flex; flex-wrap: wrap; gap: .25rem; margin: 0; padding: 0; }
+.navbar a.link { color: #dbefff; text-decoration: none; padding: .35rem .7rem; border-radius: 6px; }
+.navbar a.link:hover { background: rgba(255,255,255,.15); color: #fff; }
+.navbar a.link.active { background: #fff; color: var(--jq); font-weight: 600; }
+
+/* ---------- Layout ---------- */
+.page-head { max-width: 860px; margin: 2.5rem auto 1rem; padding: 0 1.25rem; }
+.page-head h1 { font-size: 2.2rem; line-height: 1.15; margin: 0 0 .4rem; }
+.page-head p { color: var(--muted); margin: 0; }
+.student { margin-top: .75rem; font-size: .95rem; color: var(--muted); }
+
+main { max-width: 860px; margin: 0 auto 4rem; padding: 0 1.25rem; }
+
+.task {
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-left: 5px solid var(--jq);
+  border-radius: 8px;
+  padding: 1.25rem 1.5rem 1.5rem;
+  margin: 1.5rem 0;
+}
+.task h2 { margin: 0 0 .25rem; font-size: 1.25rem; }
+.task .hint { color: var(--muted); margin: 0 0 1rem; font-size: .95rem; }
+
+.row { display: flex; flex-wrap: wrap; gap: .5rem; margin: .75rem 0; }
+
+button {
+  font: inherit;
+  border: 1px solid var(--jq);
+  background: var(--jq);
+  color: #fff;
+  padding: .45rem 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+}
+button:hover { background: #055a94; }
+button.ghost { background: #fff; color: var(--jq); }
+button.ghost:hover { background: #e8f3fb; }
+button:focus-visible, a:focus-visible, input:focus-visible { outline: 3px solid var(--sun); outline-offset: 2px; }
+
+input[type="text"], input[type="email"] {
+  font: inherit;
+  width: 100%;
+  padding: .5rem .7rem;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+}
+label { display: block; font-weight: 600; margin: .75rem 0 .25rem; }
+
+img.demo { display: block; max-width: 100%; border-radius: 8px; }
+
+.box-demo { padding: .75rem 1rem; border: 1px dashed var(--line); border-radius: 6px; margin: .5rem 0; }
+
+/* Task 4 panel */
+.panel-head { background: var(--ink); color: #fff; padding: .7rem 1rem; border-radius: 6px 6px 0 0; }
+.panel-body { border: 1px solid var(--line); border-top: 0; padding: 1rem; border-radius: 0 0 6px 6px; }
+
+/* Task 7 preview */
+.preview { background: #f6f9fc; border: 1px solid var(--line); border-radius: 6px; padding: .75rem 1rem; margin-top: 1rem; }
+
+/* Part 4 stage */
+.stage {
+  position: relative;
+  height: 260px;
+  background:
+    linear-gradient(var(--line) 1px, transparent 1px) 0 0 / 20px 20px,
+    linear-gradient(90deg, var(--line) 1px, transparent 1px) 0 0 / 20px 20px,
+    #fafcfe;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  overflow: hidden;
+}
+.square {
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  width: 60px;
+  height: 60px;
+  background: var(--jq);
+  border-radius: 4px;
+}
+
+/* Part 5 bouncing ball */
+.court {
+  position: relative;
+  height: 340px;
+  background: linear-gradient(#bfe6fb, #e9f6fd 80%, #c9b88a 80%);
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid var(--line);
+}
+#ball {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: radial-gradient(circle at 35% 30%, #fff6c9, var(--sun) 45%, #c98a00);
+  cursor: pointer;
+}
+.stats { display: flex; gap: 1.5rem; flex-wrap: wrap; margin-top: .75rem; color: var(--muted); }
+.stats strong { color: var(--ink); }
+
+footer { text-align: center; color: var(--muted); font-size: .9rem; padding: 2rem 1rem; }
+
+@media (max-width: 600px) {
+  .page-head h1 { font-size: 1.7rem; }
+  .task { padding: 1rem; }
+}

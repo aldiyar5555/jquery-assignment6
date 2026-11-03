@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Part 5. Bouncing ball | Assignment 6 – jQuery</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&family=IBM+Plex+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <nav class="navbar">
+    <a class="brand" href="index.html">Assignment 6 · jQuery</a>
+    <ul>
+      <li><a class="link" href="index.html">Part 1. Basics</a></li>
+      <li><a class="link" href="effects.html">Part 2. Effects</a></li>
+      <li><a class="link" href="dom.html">Part 3. DOM</a></li>
+      <li><a class="link" href="animations.html">Part 4. Animations</a></li>
+      <li><a class="link" href="project.html">Part 5. Project</a></li>
+    </ul>
+  </nav>
+
+  <header class="page-head">
+    <h1>Part 5. Bouncing ball</h1>
+    <p>Mini project: a ball that flies across the court and bounces back.</p>
+    <p class="student">Student: <strong>Your Full Name</strong> &nbsp;|&nbsp; Group: <strong>Your Group</strong></p>
+  </header>
+
+  <main>
+    <section class="task" id="task11">
+      <h2>Task 11. Bouncing ball</h2>
+      <p class="hint">The ball moves horizontally with <code>.animate()</code> and bounces at the walls and the floor. Click the ball to change its color.</p>
+      <div class="court" id="court"><div id="ball" title="Click me"></div></div>
+      <div class="row">
+        <button id="btnStart">Start</button>
+        <button id="btnStop" class="ghost">Stop</button>
+        <button id="btnFaster" class="ghost">Faster</button>
+        <button id="btnSlower" class="ghost">Slower</button>
+      </div>
+      <div class="stats">
+        <span>Wall bounces: <strong id="wallCount">0</strong></span>
+        <span>Floor bounces: <strong id="floorCount">0</strong></span>
+        <span>Speed: <strong id="speedLabel">1x</strong></span>
+      </div>
+    </section>
+  </main>
+
+  <footer>Assignment #6 · Web Technologies Front-End Development</footer>
+
+  <!-- Task 0: jQuery from a CDN -->
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="js/common.js"></script>
+  <script src="js/part5.js"></script>
+</body>
+</html>

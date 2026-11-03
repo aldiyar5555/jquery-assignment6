@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Part 4. Animations | Assignment 6 – jQuery</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&family=IBM+Plex+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <nav class="navbar">
+    <a class="brand" href="index.html">Assignment 6 · jQuery</a>
+    <ul>
+      <li><a class="link" href="index.html">Part 1. Basics</a></li>
+      <li><a class="link" href="effects.html">Part 2. Effects</a></li>
+      <li><a class="link" href="dom.html">Part 3. DOM</a></li>
+      <li><a class="link" href="animations.html">Part 4. Animations</a></li>
+      <li><a class="link" href="project.html">Part 5. Project</a></li>
+    </ul>
+  </nav>
+
+  <header class="page-head">
+    <h1>Part 4. Animations</h1>
+    <p>Custom animations with .animate().</p>
+    <p class="student">Student: <strong>Your Full Name</strong> &nbsp;|&nbsp; Group: <strong>Your Group</strong></p>
+  </header>
+
+  <main>
+    <section class="task" id="task8">
+      <h2>Task 8. Basic animation</h2>
+      <p class="hint">Increase size and change position.</p>
+      <div class="stage"><div class="square" id="box8"></div></div>
+      <div class="row">
+        <button id="btnAnim8">Animate</button>
+        <button id="btnReset8" class="ghost">Reset</button>
+      </div>
+    </section>
+
+    <section class="task" id="task9">
+      <h2>Task 9. Sequential animations</h2>
+      <p class="hint">Move right → move down → shrink → return to original.</p>
+      <div class="stage"><div class="square" id="box9"></div></div>
+      <div class="row">
+        <button id="btnAnim9">Start sequence</button>
+      </div>
+    </section>
+
+    <section class="task" id="task10">
+      <h2>Task 10. Combined animation</h2>
+      <p class="hint">Opacity, size and movement in one <code>.animate()</code> call.</p>
+      <div class="stage"><div class="square" id="box10"></div></div>
+      <div class="row">
+        <button id="btnAnim10">Animate</button>
+        <button id="btnReset10" class="ghost">Reset</button>
+      </div>
+    </section>
+  </main>
+
+  <footer>Assignment #6 · Web Technologies Front-End Development</footer>
+
+  <!-- Task 0: jQuery from a CDN -->
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="js/common.js"></script>
+  <script src="js/part4.js"></script>
+</body>
+</html>

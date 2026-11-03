@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Part 1. Getting started | Assignment 6 – jQuery</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&family=IBM+Plex+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <nav class="navbar">
+    <a class="brand" href="index.html">Assignment 6 · jQuery</a>
+    <ul>
+      <li><a class="link" href="index.html">Part 1. Basics</a></li>
+      <li><a class="link" href="effects.html">Part 2. Effects</a></li>
+      <li><a class="link" href="dom.html">Part 3. DOM</a></li>
+      <li><a class="link" href="animations.html">Part 4. Animations</a></li>
+      <li><a class="link" href="project.html">Part 5. Project</a></li>
+    </ul>
+  </nav>
+
+  <header class="page-head">
+    <h1>Part 1. Getting started</h1>
+    <p>jQuery setup, selectors and CSS.</p>
+    <p class="student">Student: <strong>Your Full Name</strong> &nbsp;|&nbsp; Group: <strong>Your Group</strong></p>
+  </header>
+
+  <main>
+    <section class="task" id="task0">
+      <h2>Task 0. Setup</h2>
+      <p class="hint">jQuery is loaded from <code>code.jquery.com</code>. Open DevTools → Console to see the message.</p>
+      <p id="readyStatus">Waiting for jQuery…</p>
+    </section>
+
+    <section class="task" id="task1">
+      <h2>Task 1. Selectors &amp; CSS</h2>
+      <p class="hint">Select by ID, class and tag, then change content with <code>.text()</code> / <code>.html()</code> and styles with <code>.css()</code>.</p>
+
+      <p id="byId" class="box-demo">I am selected by ID (#byId).</p>
+      <p class="byClass box-demo">I am selected by class (.byClass).</p>
+      <p class="byClass box-demo">I am also in .byClass.</p>
+      <h3 class="box-demo">I am an h3 tag, selected by tag name.</h3>
+
+      <div class="row">
+        <button id="btnText">Change with .text()</button>
+        <button id="btnHtml">Change with .html()</button>
+        <button id="btnCss">Change styles with .css()</button>
+        <button id="btnReset" class="ghost">Reset</button>
+      </div>
+    </section>
+  </main>
+
+  <footer>Assignment #6 · Web Technologies Front-End Development</footer>
+
+  <!-- Task 0: jQuery from a CDN -->
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="js/common.js"></script>
+  <script src="js/part1.js"></script>
+</body>
+</html>
